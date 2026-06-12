@@ -26,7 +26,6 @@ targets:
       host: https://dbc-40e0cb7a-cf20.cloud.databricks.com
     variables:
       catalog: test_metadata_governance
-      schema: dev
   prod:
     mode: production
     workspace:
@@ -34,8 +33,7 @@ targets:
       # We explicitly deploy to /Workspace/Users/shkodraelmedina@gmail.com to make sure we only have a single copy.
       root_path: /Workspace/Users/shkodraelmedina@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
-      catalog: test_metadata_governance
-      schema: prod
+      catalog: metadata_governance
     permissions:
       - user_name: shkodraelmedina@gmail.com
         level: CAN_MANAGE
