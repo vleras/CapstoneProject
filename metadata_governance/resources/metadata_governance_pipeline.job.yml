@@ -1,0 +1,53 @@
+resources:
+  jobs:
+    metadata_governance_pipeline:
+      name: metadata_governance_pipeline
+
+      email_notifications:
+        on_failure:
+          - leutrimrexhaj31@gmail.com
+
+      trigger:
+        pause_status: UNPAUSED
+        periodic:
+          interval: 1
+          unit: DAYS
+
+      queue:
+        enabled: true
+
+      environments:
+        - environment_key: default
+          spec:
+            environment_version: "4"
+
+      tasks:
+        - task_key: bronze_ingestion
+          environment_key: default
+          notebook_task:
+            notebook_path: /Repos/shkodraelmedina@gmail.com/Test-CP/notebooks/01_bronze_ingestion
+            source: WORKSPACE
+
+        - task_key: silver_transformation
+          depends_on:
+            - task_key: bronze_ingestion
+          environment_key: default
+          notebook_task:
+            notebook_path: /Repos/shkodraelmedina@gmail.com/Test-CP/notebooks/02_Silver_Metadata_Transformation
+            source: WORKSPACE
+
+        - task_key: gold_compliance_engine
+          depends_on:
+            - task_key: silver_transformation
+          environment_key: default
+          notebook_task:
+            notebook_path: /Repos/shkodraelmedina@gmail.com/Test-CP/notebooks/03_Gold_Compliance_Engine
+            source: WORKSPACE
+
+        - task_key: pipeline_logging
+          depends_on:
+            - task_key: gold_compliance_engine
+          environment_key: default
+          notebook_task:
+            notebook_path: /Repos/shkodraelmedina@gmail.com/Test-CP/notebooks/04_pipeline_logging
+            source: WORKSPACE
