@@ -21,7 +21,7 @@ targets:
     workspace:
       host: https://dbc-40e0cb7a-cf20.cloud.databricks.com
     variables:
-      catalog: test_metadata_governance
+      catalog: metadata_governance_test
       env_name: Test
 
   prod:
