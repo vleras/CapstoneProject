@@ -1,0 +1,1539 @@
+{
+  "datasets": [
+    {
+      "name": "171f5599",
+      "displayName": "gold_quality_metrics_final",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.gold_quality_metrics_final",
+        "dimensions": [
+          {
+            "name": "level",
+            "expr": "source.level",
+            "displayName": "Level"
+          },
+          {
+            "name": "name",
+            "expr": "source.name",
+            "displayName": "Name"
+          },
+          {
+            "name": "total_records",
+            "expr": "source.total_records",
+            "displayName": "Total Records"
+          },
+          {
+            "name": "passed",
+            "expr": "source.passed",
+            "displayName": "Passed"
+          },
+          {
+            "name": "failed",
+            "expr": "source.failed",
+            "displayName": "Failed"
+          },
+          {
+            "name": "compliance_score",
+            "expr": "source.compliance_score",
+            "displayName": "Compliance Score"
+          },
+          {
+            "name": "calculated_at",
+            "expr": "source.calculated_at",
+            "displayName": "Calculated At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "96af90d1",
+      "displayName": "gold_metadata",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.gold_metadata",
+        "dimensions": [
+          {
+            "name": "column_id",
+            "expr": "source.column_id",
+            "displayName": "Column Id"
+          },
+          {
+            "name": "column_name",
+            "expr": "source.column_name",
+            "displayName": "Column Name"
+          },
+          {
+            "name": "column_desc",
+            "expr": "source.column_desc",
+            "displayName": "Column Desc"
+          },
+          {
+            "name": "term_name",
+            "expr": "source.term_name",
+            "displayName": "Term Name"
+          },
+          {
+            "name": "term_description",
+            "expr": "source.term_description",
+            "displayName": "Term Description"
+          },
+          {
+            "name": "security_classification",
+            "expr": "source.security_classification",
+            "displayName": "Security Classification"
+          },
+          {
+            "name": "critical_data_element_flag",
+            "expr": "source.critical_data_element_flag",
+            "displayName": "Critical Data Element Flag"
+          },
+          {
+            "name": "pii_flag",
+            "expr": "source.pii_flag",
+            "displayName": "Pii Flag"
+          },
+          {
+            "name": "term_subdomain",
+            "expr": "source.term_subdomain",
+            "displayName": "Term Subdomain"
+          },
+          {
+            "name": "data_steward",
+            "expr": "source.data_steward",
+            "displayName": "Data Steward"
+          },
+          {
+            "name": "table_id",
+            "expr": "source.table_id",
+            "displayName": "Table Id"
+          },
+          {
+            "name": "table_name",
+            "expr": "source.table_name",
+            "displayName": "Table Name"
+          },
+          {
+            "name": "table_desc",
+            "expr": "source.table_desc",
+            "displayName": "Table Desc"
+          },
+          {
+            "name": "table_owner_in_source",
+            "expr": "source.table_owner_in_source",
+            "displayName": "Table Owner In Source"
+          },
+          {
+            "name": "schema_id",
+            "expr": "source.schema_id",
+            "displayName": "Schema Id"
+          },
+          {
+            "name": "schema_name",
+            "expr": "source.schema_name",
+            "displayName": "Schema Name"
+          },
+          {
+            "name": "database_id",
+            "expr": "source.database_id",
+            "displayName": "Database Id"
+          },
+          {
+            "name": "database_name",
+            "expr": "source.database_name",
+            "displayName": "Database Name"
+          },
+          {
+            "name": "system_id",
+            "expr": "source.system_id",
+            "displayName": "System Id"
+          },
+          {
+            "name": "system_name",
+            "expr": "source.system_name",
+            "displayName": "System Name"
+          },
+          {
+            "name": "location",
+            "expr": "source.location",
+            "displayName": "Location"
+          },
+          {
+            "name": "total_record_count",
+            "expr": "source.total_record_count",
+            "displayName": "Total Record Count"
+          },
+          {
+            "name": "invalid_record_count",
+            "expr": "source.invalid_record_count",
+            "displayName": "Invalid Record Count"
+          },
+          {
+            "name": "tag_name",
+            "expr": "source.tag_name",
+            "displayName": "Tag Name"
+          },
+          {
+            "name": "tag_value",
+            "expr": "source.tag_value",
+            "displayName": "Tag Value"
+          },
+          {
+            "name": "certification_level",
+            "expr": "source.certification_level",
+            "displayName": "Certification Level"
+          },
+          {
+            "name": "ingestion_timestamp",
+            "expr": "source.ingestion_timestamp",
+            "displayName": "Ingestion Timestamp"
+          },
+          {
+            "name": "load_date",
+            "expr": "source.load_date",
+            "displayName": "Load Date"
+          },
+          {
+            "name": "record_source",
+            "expr": "source.record_source",
+            "displayName": "Record Source"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "e8c76a67",
+      "displayName": "gold_certified_metadata_final",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.gold_certified_metadata_final",
+        "dimensions": [
+          {
+            "name": "column_id",
+            "expr": "source.column_id",
+            "displayName": "Column Id"
+          },
+          {
+            "name": "column_name",
+            "expr": "source.column_name",
+            "displayName": "Column Name"
+          },
+          {
+            "name": "column_desc",
+            "expr": "source.column_desc",
+            "displayName": "Column Desc"
+          },
+          {
+            "name": "term_name",
+            "expr": "source.term_name",
+            "displayName": "Term Name"
+          },
+          {
+            "name": "term_description",
+            "expr": "source.term_description",
+            "displayName": "Term Description"
+          },
+          {
+            "name": "security_classification",
+            "expr": "source.security_classification",
+            "displayName": "Security Classification"
+          },
+          {
+            "name": "critical_data_element_flag",
+            "expr": "source.critical_data_element_flag",
+            "displayName": "Critical Data Element Flag"
+          },
+          {
+            "name": "pii_flag",
+            "expr": "source.pii_flag",
+            "displayName": "Pii Flag"
+          },
+          {
+            "name": "term_subdomain",
+            "expr": "source.term_subdomain",
+            "displayName": "Term Subdomain"
+          },
+          {
+            "name": "data_steward",
+            "expr": "source.data_steward",
+            "displayName": "Data Steward"
+          },
+          {
+            "name": "table_id",
+            "expr": "source.table_id",
+            "displayName": "Table Id"
+          },
+          {
+            "name": "table_name",
+            "expr": "source.table_name",
+            "displayName": "Table Name"
+          },
+          {
+            "name": "table_desc",
+            "expr": "source.table_desc",
+            "displayName": "Table Desc"
+          },
+          {
+            "name": "table_owner_in_source",
+            "expr": "source.table_owner_in_source",
+            "displayName": "Table Owner In Source"
+          },
+          {
+            "name": "schema_id",
+            "expr": "source.schema_id",
+            "displayName": "Schema Id"
+          },
+          {
+            "name": "schema_name",
+            "expr": "source.schema_name",
+            "displayName": "Schema Name"
+          },
+          {
+            "name": "database_id",
+            "expr": "source.database_id",
+            "displayName": "Database Id"
+          },
+          {
+            "name": "database_name",
+            "expr": "source.database_name",
+            "displayName": "Database Name"
+          },
+          {
+            "name": "system_id",
+            "expr": "source.system_id",
+            "displayName": "System Id"
+          },
+          {
+            "name": "system_name",
+            "expr": "source.system_name",
+            "displayName": "System Name"
+          },
+          {
+            "name": "location",
+            "expr": "source.location",
+            "displayName": "Location"
+          },
+          {
+            "name": "total_record_count",
+            "expr": "source.total_record_count",
+            "displayName": "Total Record Count"
+          },
+          {
+            "name": "invalid_record_count",
+            "expr": "source.invalid_record_count",
+            "displayName": "Invalid Record Count"
+          },
+          {
+            "name": "tag_name",
+            "expr": "source.tag_name",
+            "displayName": "Tag Name"
+          },
+          {
+            "name": "tag_value",
+            "expr": "source.tag_value",
+            "displayName": "Tag Value"
+          },
+          {
+            "name": "certification_level",
+            "expr": "source.certification_level",
+            "displayName": "Certification Level"
+          },
+          {
+            "name": "ingestion_timestamp",
+            "expr": "source.ingestion_timestamp",
+            "displayName": "Ingestion Timestamp"
+          },
+          {
+            "name": "load_date",
+            "expr": "source.load_date",
+            "displayName": "Load Date"
+          },
+          {
+            "name": "record_source",
+            "expr": "source.record_source",
+            "displayName": "Record Source"
+          },
+          {
+            "name": "error_detail",
+            "expr": "source.error_detail",
+            "displayName": "Error Detail"
+          },
+          {
+            "name": "remediation_hint",
+            "expr": "source.remediation_hint",
+            "displayName": "Remediation Hint"
+          },
+          {
+            "name": "certification_status",
+            "expr": "source.certification_status",
+            "displayName": "Certification Status"
+          },
+          {
+            "name": "completeness_score",
+            "expr": "source.completeness_score",
+            "displayName": "Completeness Score"
+          },
+          {
+            "name": "ingestion_status",
+            "expr": "source.ingestion_status",
+            "displayName": "Ingestion Status"
+          },
+          {
+            "name": "certified_at",
+            "expr": "source.certified_at",
+            "displayName": "Certified At"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "a498fcc8",
+      "displayName": "quarantine_summary",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.quarantine_summary",
+        "dimensions": [
+          {
+            "name": "row_status",
+            "expr": "source.row_status",
+            "displayName": "Row Status"
+          },
+          {
+            "name": "row_count",
+            "expr": "source.row_count",
+            "displayName": "Row Count"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "c82ce19e",
+      "displayName": "columns_per_table",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.columns_per_table",
+        "dimensions": [
+          {
+            "name": "table_name",
+            "expr": "source.table_name",
+            "displayName": "Table Name"
+          },
+          {
+            "name": "schema_name",
+            "expr": "source.schema_name",
+            "displayName": "Schema Name"
+          },
+          {
+            "name": "total_columns",
+            "expr": "source.total_columns",
+            "displayName": "Total Columns"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "2eb99144",
+      "displayName": "tables_per_schema",
+      "config": {
+        "version": "1.1",
+        "source": "metadata_governance.gold.tables_per_schema",
+        "dimensions": [
+          {
+            "name": "schema_name",
+            "expr": "source.schema_name",
+            "displayName": "Schema Name"
+          },
+          {
+            "name": "total_tables",
+            "expr": "source.total_tables",
+            "displayName": "Total Tables"
+          }
+        ],
+        "measures": [
+          {
+            "name": "count",
+            "expr": "COUNT(*)",
+            "comment": "Represents the total number of rows in the dataset. Use this measure to count all",
+            "displayName": "Count"
+          }
+        ]
+      }
+    },
+    {
+      "name": "3138bfbb",
+      "displayName": "Certification Status Summary of Gold Metadata",
+      "queryLines": [
+        "SELECT COUNT(*) AS passed_records\n",
+        "FROM metadata_governance.gold.gold_certified_metadata_final\n",
+        "WHERE certification_status = 'PASS'"
+      ]
+    },
+    {
+      "name": "c568bffa",
+      "displayName": "Tables Needing Review Based on Compliance Threshold",
+      "queryLines": [
+        "SELECT COUNT(DISTINCT name) AS `Tables Requiring Attention`\r\n",
+        "FROM metadata_governance.gold.gold_quality_metrics_final\r\n",
+        "WHERE level = 'table' \r\n",
+        "  AND CAST(compliance_score AS DOUBLE) < :Compliance_Threshold"
+      ],
+      "parameters": [
+        {
+          "displayName": "Compliance_Threshold",
+          "keyword": "Compliance_Threshold",
+          "dataType": "STRING",
+          "defaultSelection": {
+            "values": {
+              "dataType": "STRING",
+              "values": [
+                {
+                  "value": "100"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "ab07f215",
+      "displayName": "Data Quality Rule Compliance Overview",
+      "queryLines": [
+        "SELECT \r\n",
+        "  name AS `Table Name`, \r\n",
+        "  passed AS `Passed Rules`, \r\n",
+        "  failed AS `Failed Rules`, \r\n",
+        "  compliance_score AS `Compliance Score (%)`\r\n",
+        "FROM metadata_governance.gold.gold_quality_metrics_final\r\n",
+        "WHERE level = 'table' AND compliance_score < 100\r\n",
+        "ORDER BY compliance_score ASC"
+      ]
+    },
+    {
+      "name": "96ee9514",
+      "displayName": "structural compliance",
+      "queryLines": [
+        "SELECT 'Perfect Match (10 Columns)' AS `Structural Status`, 13 AS `Number of Tables`\r\n",
+        "UNION ALL\r\n",
+        "SELECT 'Structural Anomaly (<10 Columns)' AS `Structural Status`, 1 AS `Number of Tables`"
+      ]
+    },
+    {
+      "name": "5a5285ce",
+      "displayName": "Gold Data Quality Insights Summary",
+      "queryLines": [
+        "SELECT * FROM metadata_governance.gold.gold_quality_metrics_final;"
+      ]
+    },
+    {
+      "name": "2b00a722",
+      "displayName": "Flaws_ingestion_governance",
+      "queryLines": [
+        "SELECT \r\n",
+        "  name AS table_name,\r\n",
+        "  'Ingestion Flaw (Pipeline)' AS flaw_type,\r\n",
+        "  failed AS flaw_count\r\n",
+        "FROM metadata_governance.gold.gold_quality_metrics_final\r\n",
+        "WHERE level = 'table'\r\n",
+        "UNION ALL\r\n",
+        "SELECT \r\n",
+        "  table_name,\r\n",
+        "  'Governance Flaw (Documentation)' AS flaw_type,\r\n",
+        "  COUNT(*) AS flaw_count\r\n",
+        "FROM metadata_governance.gold.gold_certified_metadata_final\r\n",
+        "WHERE column_desc IS NULL OR data_steward IS NULL\r\n",
+        "GROUP BY table_name"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "d3718643",
+      "displayName": "Metadata_governance",
+      "layout": [
+        {
+          "widget": {
+            "name": "verall-compliance-score",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "171f5599",
+                  "fields": [
+                    {
+                      "name": "avg(compliance_score)",
+                      "expression": "AVG(`compliance_score`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`level` IN ('catalog')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Overall Compliance Score"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "avg(compliance_score)",
+                  "format": {
+                    "type": "number-plain",
+                    "abbreviation": "compact",
+                    "decimalPlaces": {
+                      "type": "max",
+                      "places": 2
+                    },
+                    "significantFigures": {
+                      "type": "exact",
+                      "figures": 3
+                    },
+                    "hideGroupSeparator": false,
+                    "negativeSign": "standard"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 1,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "tables-per-schema",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "e8c76a67",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Columns Checked"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 3,
+            "y": 1,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "clean-vs-quarantined-records-1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "a498fcc8",
+                  "fields": [
+                    {
+                      "name": "sum(row_count)",
+                      "expression": "SUM(`row_count`)"
+                    },
+                    {
+                      "name": "row_status",
+                      "expression": "`row_status`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "mark": {
+                "colors": [
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 1
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "frame": {
+                "showTitle": true,
+                "title": "Clean vs Quarantined Records"
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "sum(row_count)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "row_status",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "quarantined",
+                        "color": "#E6D1AC"
+                      },
+                      {
+                        "value": "clean",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                },
+                "extra": [
+                  {
+                    "fieldName": "sum(row_count)"
+                  }
+                ]
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 4,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "governance-rule-compliance-r01-r12",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "171f5599",
+                  "fields": [
+                    {
+                      "name": "failed",
+                      "expression": "`failed`"
+                    },
+                    {
+                      "name": "name",
+                      "expression": "`name`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`level` IN ('rule')"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Top Failed Governance Rules"
+              },
+              "mark": {
+                "colors": [
+                  "#07759D",
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "failed",
+                  "displayName": "Number of Failures",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "name",
+                  "displayName": "Governance Rule",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "x-reversed"
+                    }
+                  }
+                },
+                "label": {
+                  "show": true
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 18,
+            "width": 12,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "tot",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "171f5599",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`level` IN ('table')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Total Tables",
+                "headerAlignment": "left"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "count(*)"
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 1,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "column-count-per-table",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "171f5599",
+                  "fields": [
+                    {
+                      "name": "sum(total_records)",
+                      "expression": "SUM(`total_records`)"
+                    },
+                    {
+                      "name": "name",
+                      "expression": "`name`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`level` IN ('table')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Column Count per Table"
+              },
+              "mark": {
+                "colors": [
+                  "#E7CE9B",
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 2
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 3
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 4
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 5
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 6
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 7
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 8
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 9
+                  },
+                  {
+                    "themeColorType": "visualizationColors",
+                    "position": 10
+                  }
+                ]
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(total_records)",
+                  "displayName": "Total Columns",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "name",
+                  "displayName": "Table name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 11,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "ta1",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "c568bffa",
+                  "fields": [
+                    {
+                      "name": "sum(Tables Requiring Attention)",
+                      "expression": "SUM(`Tables Requiring Attention`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Critical Tables"
+              },
+              "widgetType": "counter",
+              "encodings": {
+                "value": {
+                  "fieldName": "sum(Tables Requiring Attention)",
+                  "style": {
+                    "rules": [
+                      {
+                        "condition": {
+                          "operand": {
+                            "type": "data-value",
+                            "value": "0"
+                          },
+                          "operator": ">"
+                        },
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 4
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            },
+            "specExtensions": {
+              "widgetBorderColor": {
+                "light": "#0E0D0D"
+              }
+            }
+          },
+          "position": {
+            "x": 9,
+            "y": 1,
+            "width": 3,
+            "height": 2
+          }
+        },
+        {
+          "widget": {
+            "name": "lower-compliance-tables",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "ab07f215",
+                  "fields": [
+                    {
+                      "name": "Table Name",
+                      "expression": "`Table Name`"
+                    },
+                    {
+                      "name": "Passed Rules",
+                      "expression": "`Passed Rules`"
+                    },
+                    {
+                      "name": "Failed Rules",
+                      "expression": "`Failed Rules`"
+                    },
+                    {
+                      "name": "Compliance Score (%)",
+                      "expression": "`Compliance Score (%)`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 2,
+              "frame": {
+                "showTitle": true,
+                "title": "Lower Compliance Tables"
+              },
+              "widgetType": "table",
+              "encodings": {
+                "columns": [
+                  {
+                    "fieldName": "Table Name"
+                  },
+                  {
+                    "fieldName": "Passed Rules"
+                  },
+                  {
+                    "fieldName": "Failed Rules"
+                  },
+                  {
+                    "fieldName": "Compliance Score (%)"
+                  }
+                ],
+                "rowOrder": [
+                  {
+                    "by": "column-reversed",
+                    "field": {
+                      "index": 2
+                    }
+                  }
+                ]
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 24,
+            "width": 7,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "data-catalog-certification-status",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "e8c76a67",
+                  "fields": [
+                    {
+                      "name": "count(*)",
+                      "expression": "COUNT(`*`)"
+                    },
+                    {
+                      "name": "certification_level",
+                      "expression": "`certification_level`"
+                    }
+                  ],
+                  "filters": [
+                    {
+                      "expression": "`certification_level` IN ('Certified', 'Compliant', 'Needs Improvement', 'Non-Compliant')"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Data Catalog Certification Status"
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "count(*)",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "color": {
+                  "fieldName": "certification_level",
+                  "scale": {
+                    "type": "categorical",
+                    "mappings": [
+                      {
+                        "value": "Certified",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 3
+                        }
+                      },
+                      {
+                        "value": "Compliant",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 1
+                        }
+                      },
+                      {
+                        "value": "Needs Improvement",
+                        "color": {
+                          "themeColorType": "visualizationColors",
+                          "position": 2
+                        }
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": true
+                },
+                "extra": [
+                  {
+                    "fieldName": "certification_level"
+                  }
+                ]
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 4,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "792f38c9",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"text-align:center;display:block\"><span style=\"font-size:20px\">***Executive Summary & Key Performance Indicators***</span></span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "9469d52b",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"text-align:center;display:block\"><span style=\"font-size:20px\">***Data Ingestion Health & Catalog Certification***</span></span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 3,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "015ed8c6",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"text-align:center;display:block\"><span style=\"font-size:20px\">***Schema Analysis&#32;***</span></span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 10,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "catalog-structural-uniformity",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "96ee9514",
+                  "fields": [
+                    {
+                      "name": "sum(Number of Tables)",
+                      "expression": "SUM(`Number of Tables`)"
+                    },
+                    {
+                      "name": "Structural Status",
+                      "expression": "`Structural Status`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Catalog Structural Uniformity"
+              },
+              "widgetType": "pie",
+              "encodings": {
+                "angle": {
+                  "fieldName": "sum(Number of Tables)",
+                  "scale": {
+                    "type": "quantitative"
+                  },
+                  "axis": {
+                    "title": "Number of Tables"
+                  }
+                },
+                "color": {
+                  "fieldName": "Structural Status",
+                  "legend": {
+                    "hideTitle": false,
+                    "hide": false
+                  },
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "natural-order-reversed"
+                    }
+                  }
+                },
+                "label": {
+                  "show": true,
+                  "text": {
+                    "fieldName": "sum(Number of Tables)"
+                  }
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 6,
+            "y": 11,
+            "width": 6,
+            "height": 6
+          }
+        },
+        {
+          "widget": {
+            "name": "636370fa",
+            "multilineTextboxSpec": {
+              "lines": [
+                "<span style=\"text-align:center;display:block\"><span style=\"font-size:20px\">***Operational Risk & Action Items***</span></span>"
+              ]
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 17,
+            "width": 12,
+            "height": 1
+          }
+        },
+        {
+          "widget": {
+            "name": "pipeline-failures-vs-documentation-gaps",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "2b00a722",
+                  "fields": [
+                    {
+                      "name": "flaw_type",
+                      "expression": "`flaw_type`"
+                    },
+                    {
+                      "name": "sum(flaw_count)",
+                      "expression": "SUM(`flaw_count`)"
+                    },
+                    {
+                      "name": "table_name",
+                      "expression": "`table_name`"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "frame": {
+                "showTitle": true,
+                "title": "Pipeline Failures vs. Documentation Gaps"
+              },
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "sum(flaw_count)",
+                  "displayName": "Flaw Count",
+                  "scale": {
+                    "type": "quantitative"
+                  }
+                },
+                "y": {
+                  "fieldName": "table_name",
+                  "displayName": "Table name",
+                  "scale": {
+                    "type": "categorical"
+                  }
+                },
+                "color": {
+                  "fieldName": "flaw_type",
+                  "legend": {
+                    "position": "bottom"
+                  },
+                  "displayName": "Flaw Type",
+                  "scale": {
+                    "type": "categorical",
+                    "sort": {
+                      "by": "x"
+                    },
+                    "mappings": [
+                      {
+                        "value": "Governance Flaw (Documentation)",
+                        "color": "#93999C"
+                      }
+                    ]
+                  }
+                },
+                "label": {
+                  "show": false
+                }
+              },
+              "data": {
+                "queryName": "main_query"
+              }
+            }
+          },
+          "position": {
+            "x": 7,
+            "y": 24,
+            "width": 5,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS",
+      "layoutVersion": "GRID_V1"
+    },
+    {
+      "name": "0ccfbb76",
+      "displayName": "Global Filters",
+      "pageType": "PAGE_TYPE_GLOBAL_FILTERS",
+      "layoutVersion": "GRID_V1"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    },
+    "applyModeEnabled": false
+  }
+}
